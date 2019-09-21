@@ -12,6 +12,7 @@ interface InputEventInit extends UIEventInit {
 interface InputEvent extends UIEvent {
     readonly data: string | null;
     readonly isComposing: boolean;
+    readonly inputType: string;
 }
 declare var InputEvent: {
     prototype: InputEvent;
